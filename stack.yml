@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_USER: thiago
+      MYSQL_ROOT_PASSWORD: thiago
+      MYSQL_PASSWORD: thiago
+    volumes:
+      - valhalla_devdojo_1:/var/lib/mysql
+volumes:
+  valhalla_devdojo_1:
