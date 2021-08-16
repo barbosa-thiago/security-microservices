@@ -1,4 +1,4 @@
-package com.thiago.valhalla.security.config;
+package com.thiago.valhallaproject.security.config;
 
 import com.thiago.valhallaproject.property.JwtConfiguration;
 import lombok.RequiredArgsConstructor;
@@ -13,7 +13,7 @@ import static org.springframework.security.config.http.SessionCreationPolicy.STA
 
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class SecurityTokenConfig extends WebSecurityConfigurerAdapter {
-    private final JwtConfiguration jwtConfiguration;
+    protected final JwtConfiguration jwtConfiguration;
 
 
     @Override
