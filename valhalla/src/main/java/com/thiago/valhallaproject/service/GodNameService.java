@@ -14,4 +14,8 @@ public class GodNameService {
     public Iterable<GodName> findAll(Pageable pageable) {
         return godNameRepository.findAll(pageable);
     }
+
+    public GodName save(GodName godName){
+        return godNameRepository.save(godName);
+    }
 }

@@ -7,9 +7,7 @@ services:
     ports:
       - 3306:3306
     environment:
-      MYSQL_USER: thiago
       MYSQL_ROOT_PASSWORD: thiago
-      MYSQL_PASSWORD: thiago
     volumes:
       - valhalla_devdojo_1:/var/lib/mysql
 volumes:
